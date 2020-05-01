@@ -1,0 +1,5 @@
+master $ kubectl certificate deny agent-smith
+certificatesigningrequest.certificates.k8s.io/agent-smith approved
+master $ kubectl get csr
+NAME          AGE     REQUESTOR                 CONDITION
+agent-smith   2m      agent-x                   Denied
